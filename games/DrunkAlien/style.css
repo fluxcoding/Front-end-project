@@ -1,0 +1,80 @@
+.hide {
+            display: none;
+        }
+        
+        .gameArea {
+            background-image: url("space.jpg");
+;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+        
+        .score {
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 50px;
+            font-size: 1.5em;
+            font-family: fantasy;
+        }
+        
+        .startScreen {
+            position: absolute;
+            background-color: black;
+            left: 25%;
+            top: 100px;
+            font-size: 3em;
+            color: white;
+            width: 50%;
+            padding: 15px;
+            border: 1px solid black;
+            text-align: center;
+            box-shadow: 5px 5px grey;
+        }
+        
+        .bird {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            width: 100px;
+            height: 60px;
+            line-height: 40px;
+            font-size: 1.5em;
+            background-image: url(bird.png);
+            background-size: cover;
+        }
+        
+        /*.wing {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            background-color: gold;
+            background-image: url("space.jpg");
+            width: 25px;
+            height: 12px;
+            border-radius: 5px;
+        }*/
+        
+        .gameMessage {
+            position: absolute;
+            top: 10%;
+            text-align: center;
+            left: 20%;
+            width: 60%;
+            background-color: aliceblue;
+            font-size: 2em;
+        }
+        
+        .pipe {
+            width: 100px;
+            position: absolute;
+            text-align: center;
+            border: 1px solid black;
+            box-shadow: 5px 5px black;
+
+
+        

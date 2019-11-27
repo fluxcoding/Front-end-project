@@ -1,0 +1,10 @@
+.flex-parent {
+	display: flex;
+	margin-left: 50px;
+}
+
+
+.colorz div{
+
+	margin-top:10px;
+}

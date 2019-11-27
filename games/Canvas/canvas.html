@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />	
+  <title>Canvas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+	 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+
+<body onload="init()">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><img src="../../images/logo.png" style="width: 90px;"></a>
+			</div><!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="">
+						<a href="../../index.html">Home<span class="sr-only">(current)</span></a>
+					</li>
+					<li>
+						<a href="#">Ranking</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="purchase">
+						<a href="#">Shop</a>
+					</li>
+					<li class="dropdown">
+						<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Profile <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">My profile</a>
+							</li>
+							<li>
+								<a href="#">Coins</a>
+							</li>
+							<li>
+								<a href="#">Settings</a>
+							</li>
+							<li class="divider" role="separator"></li>
+							<li>
+								<a href="#">Log out</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+<!-- ----------------- -->
+
+<div class="flex-parent" ">
+		<div class="child1">
+		<canvas id="can" width="400" height="400" style="top:10%;left:10%;border:2px solid;"></canvas>
+        <img id="canvasimg" style="top:10%;left:52%;">
+        <br>
+        <!-- <input type="button" value="save" id="btn" size="30" onclick="save()" style="top:55%;left:11%;"> -->
+        <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="top:55%;left:15%;">
+		</div>
+
+<div class="child2">
+	<div class="colorz">Choose Color
+        <div style="width:10px;height:10px;background:green;" id="green" onclick="color(this)"></div>
+        <div style="width:10px;height:10px;background:blue;" id="blue" onclick="color(this)"></div>
+        <div style="width:10px;height:10px;background:red;" id="red" onclick="color(this)"></div>
+        <div style="width:10px;height:10px;background:yellow;" id="yellow" onclick="color(this)"></div>
+        <div style="width:10px;height:10px;background:orange;" id="orange" onclick="color(this)"></div>
+        <div style="width:10px;height:10px;background:black;" id="black" onclick="color(this)"></div>
+        </div>
+        <br>
+        <div style="">Eraser</div>
+        <div style="width:15px;height:15px;background:white;border:2px solid;" id="white" onclick="color(this)"></div>
+</div>
+
+</div>
+<script type="text/javascript" src="main.js"></script>
+
+	</body>
+</html>
